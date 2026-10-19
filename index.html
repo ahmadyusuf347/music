@@ -913,7 +913,9 @@
     <main class="main">
       <div class="stk" id="stk">
         <div class="stk-in">
-          <div class="stk-art"><svg><use href="#i-note" /></svg></div>
+          <div class="stk-art">
+            <svg><use href="#i-note" /></svg>
+          </div>
           <b class="stk-name" id="pn2"></b>
           <button class="big stk-play" id="bp2" aria-label="Putar">
             <svg><use href="#i-play" /></svg>
@@ -1013,7 +1015,7 @@
 
     <script>
       /* ============ PENGATURAN: EDIT BAGIAN INI ============ */
-      var PLAYLIST_NAME = "DAMN BRO";
+      var PLAYLIST_NAME = "YUSUF'S PLAYLIST";
       var PLAYLIST_COVER = "asset/PlaylistCover.webp";
       var SONGS = [
         /* Taruh file MP3 di folder "lagu" di samping file HTML ini, lalu daftarkan di sini.
@@ -1082,10 +1084,10 @@
           lrc: "asset/lirik/",
         },
         {
-          title: "",
-          artist: "",
-          src: "asset/",
-          cover: "asset/cover_mp3/",
+          title: "Location Unknown",
+          artist: "HONNE",
+          src: "asset/HONNE_Location_Unknown.mp3",
+          cover: "asset/cover_mp3/Honne.jpg",
           lrc: "asset/lirik/",
         },
         {
@@ -1306,7 +1308,7 @@
           function () {
             mn.classList.toggle("sc", mn.scrollTop > hero.offsetHeight - 10);
           },
-          { passive: true }
+          { passive: true },
         );
       })();
       $("nx").onclick = function () {
